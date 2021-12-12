@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context="com.pokemon.NuevoPokemonFragment">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Escriba con la primera letra en mayuscula y sin accentos." />
+
+    <EditText
+        android:id="@+id/nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre"
+        android:textSize="32sp"/>
+    <EditText
+        android:id="@+id/tipo1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tipo 1"
+        android:textSize="32sp"/>
+    <EditText
+        android:id="@+id/tipo2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tipo 2"
+        android:textSize="32sp"/>
+
+    <EditText
+        android:id="@+id/descripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Descripción"
+        android:textSize="32sp" />
+    <Button
+        android:id="@+id/crear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Crear"
+        android:textSize="32sp"/>
+
+</LinearLayout>

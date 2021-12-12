@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/recyclerPokemonesFragment"
+        android:name="com.pokemon.RecyclerElementosFragment"
+        android:label="Pokemones"
+        tools:layout="@layout/fragment_recycler_pokemones" />
+
+    <action
+        android:id="@+id/action_mostrarPokemonFragment"
+        app:destination="@id/mostrarPokemonFragment" />
+    <action
+        android:id="@+id/action_nuevoPokemonFragment"
+        app:destination="@id/nuevoPokemonFragment" />
+
+    <fragment
+        android:id="@+id/nuevoPokemonFragment"
+        android:name="com.pokemon.NuevoPokemonFragment"
+        android:label="Nuevo Pokemon"
+        tools:layout="@layout/fragment_nuevo_pokemon" />
+    <fragment
+        android:id="@+id/mostrarPokemonFragment"
+        android:name="com.pokemon.MostrarPokemonFragment"
+        android:label="Mostrar Pokemon"
+        tools:layout="@layout/fragment_mostrar_pokemon" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.pokemon.HomeFragment"
+        android:label="Inicio"
+        tools:layout="@layout/fragment_home" />
+</navigation>
